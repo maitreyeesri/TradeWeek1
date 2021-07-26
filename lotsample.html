@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List of trades</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://bootstrap-table.com/docs/extensions/filter-control/bootstrap-table-filter-control.css">
+        <script src="https://bootstrap-table.com/docs/bootstrap-table-filter-control.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        $(document).on('click','tr',function(){
+          $(this).find('input[type="radio"]').prop('checked',true);    
+        });
+        </script>
+    <style>
+      .my-custom-scrollbar {
+        position: relative;
+        height: 400px;
+        overflow: auto;
+            }
+      .table-wrapper-scroll-y {
+        display: block;
+            }
+           
+    </style>
+    <body class="container-fluid" style="background-color:white;">
+        <nav class="navbar navbar-light" style="background-color:#063970;">
+            <div class="container-fluid">
+                <img src="https://freepikpsd.com/media/2019/10/standard-chartered-bank-png-6-Transparent-Images.png" alt="" width="4%" class="d-inline-block align-text-top">
+              <a class="navbar-brand" href="#"  style="text-align: center; color: white;">
+                <span">TRADE CONFIRMATION PLATFORM</span> 
+              </a>
+            <span id = "logout" style = "border-color: white; padding-left:1%; padding-right:1%; color: white; border-radius: 5%;">Logout</span>
+          </nav>
+        <ul class="nav nav-tabs" style = "background-color: rgb(235, 231, 231);">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>PDF Generator</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Check Post</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span>Static</span></a>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span>User Profile</span></s></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Manage your Account</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+        </ul>
+            <br><br>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary">New</button>
+              <button type="button" class="btn btn-secondary">Pending</button>
+              <button type="button" class="btn btn-secondary">History</button>
+            </div>
+            <input type="text" id="myInput" style="margin-left: 800px;" placeholder="Search..">
+            <br><br>
+      <div class="table-wrapper-scroll-y my-custom-scrollbar">
+        <table id="table" width = "90%" class="table table-bordered table-hover" data-search="true" data-filter-control="true" data-click-to-select="true">
+          
+            <thead>
+            <tr style="background-color:lightgreen;">
+              <th style="width: 10px;"></th>  
+              <th data-filter-control="input" data-sortable="true">Trade commodity</th>
+              <th data-filter-control="input" data-sortable="true">Trade code</th>
+              <th data-filter-control="input" data-sortable="true">Date</th>
+              <th data-filter-control="select" data-sortable="true">Outbound status</th>
+              <th data-filter-control="select" data-sortable="true">Inbound status</th>
+              <th data-filter-control="input" data-sortable="true">Remarks</th>
+            </tr>
+          </thead>
+          <tbody id="myTable" class="product-options">
+            <tr>
+              <td><input type="radio" name="check"></td>
+              <td>FX</td>
+              <td>BARC/LDN</td>
+              <td>20/07/2021</td>
+              <td>Sent</td>
+              <td>Received</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="check" ></td>  
+              <td>Derivatives</td>
+              <td>MSCG/NY</td>
+              <td>20/07/2021</td>
+              <td>Sent</td>
+              <td>Not received</td>
+              <td></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>FX</td>
+                <td>CITI/NY</td>
+                <td>20/07/2021</td>
+                <td>Sent</td>
+                <td>Received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>FI</td>
+                <td>DEUTB/FRA</td>
+                <td>20/07/2021</td>
+                <td>Sent</td>
+                <td>Not received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>Derivatives</td>
+                <td>ANZ/MEL</td>
+                <td>21/07/2021</td>
+                <td>Not sent</td>
+                <td>Not received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>FX</td>
+                <td>ANZ/MEL</td>
+                <td>21/07/2021</td>
+                <td>Sent</td>
+                <td>Received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>Derivatives</td>
+                <td>DBS/BNPPAR</td>
+                <td>21/07/2021</td>
+                <td>Sent</td>
+                <td>Received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>FX</td>
+                <td>NY/CITY</td>
+                <td>22/07/2021</td>
+                <td>Sent</td>
+                <td>Not received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>Derivatives</td>
+                <td>DBS/HSBC</td>
+                <td>22/07/2021</td>
+                <td>Sent</td>
+                <td>Not received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>FI</td>
+                <td>ANZ/SIN</td>
+                <td>22/07/2021</td>
+                <td>Not Sent</td>
+                <td>Not received</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="check"></td> 
+                <td>FX</td>
+                <td>JARON/MEL</td>
+                <td>22/07/2021</td>
+                <td>Sent</td>
+                <td>Received</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div><br>
+        <div class="text-center">
+          <button type="button" class="btn btn-primary">Open</button>
+          </div>
+          <script>
+          </script>
+    </body>
+</html>

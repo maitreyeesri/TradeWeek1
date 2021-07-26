@@ -1,0 +1,61 @@
+.pdf-file {
+    padding: 2%;
+    width: 100%;
+}
+body{
+    background-color: #fffdfd;
+}
+#buttons button{
+    margin-left: 50%;
+    background-color: #1e81b0;
+}
+#floatingTextarea2{
+    color:rgb(95, 94, 94);
+    font-size: 70%;
+    background-color: rgb(247, 247, 252);
+}
+#dropdownMenuButton{
+    margin-left: 300%;
+    background-color: #1e81b0;
+}
+.navbar-brand{
+    margin-left: 1%;
+    font-size: 150%;
+}
+.display-pdf {
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: baseline;
+    align-items: center;
+}
+#my-textarea {
+    width:50%;
+    
+    
+}
+.form-group{
+    padding-left:20%;
+}
+.display-btn {
+    width:100%;
+    padding-top:2%;
+    padding-left:35%;
+    padding-right:35%;
+}
+.display-btn>{
+    padding-right:35%;
+}
+.btn-primary {
+    background-color: rgba(30, 129, 176, 1);
+    margin:5%;
+}
+p{
+    font-size: x-large;
+}
+body{
+    color:rgba(30, 129, 176, 1);
+}
+header{
+    color:rgba(30, 129, 176, 1);
+}

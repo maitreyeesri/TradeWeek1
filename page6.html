@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- CSS only -->
+  <title>Document Comparison</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="styling.css">
+</head>
+
+<body class="container-fluid">
+  <header>
+  <nav class="navbar navbar-light" style="background-color:#063970;">
+    <div class="container-fluid">
+        <img src="https://freepikpsd.com/media/2019/10/standard-chartered-bank-png-6-Transparent-Images.png" alt="" width="4%" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="#"  style="text-align: center; color: white;">
+        <span">TRADE CONFIRMATION PLATFORM</span> 
+      </a>
+    <span id = "logout" style = "border-color: white; padding-left:1%; padding-right:1%; color: white; border-radius: 5%;">Logout</span>
+  </nav>
+<ul class="nav nav-tabs" style = "background-color: rgb(235, 231, 231);">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span>PDF Generator</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span>Check Post</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#"><span>Static</span></a>
+      </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span>User Profile</span></s></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Manage your Account</a></li>
+          <li><a class="dropdown-item" href="#"></a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </li>
+</ul>
+  </header>
+  <div>
+    <div class="display-pdf">
+      <div class="pdf-file">
+        <p>Inbound Confirmation</p>
+        <embed src="Notice-7.pdf" width="100%" height="550px" />
+      </div>
+      <div class="pdf-file">
+        <p>Outbound Confirmation</p>
+        <embed src="Notice-7.pdf" width="100%" height="550px" />
+      </div>
+    </div>
+    <div class="comments">
+      
+      <div class="form-group">
+       <span style="font-size: xx-large;">Comments :</span>
+        <textarea id="my-textarea" class="form-control" name="Checker Comments :" rows="3" placeholder="Enter your comments here"></textarea>
+      </div>
+
+    </div>
+    <div class="display-btn">
+      <a class="btn btn-lg btn-primary" href="#" role="button">Confirm</a>
+      <a class="btn btn-lg btn-primary" href="#" role="button">Reject</a>
+      <a class="btn btn-lg btn-primary" href="#" role="button">Pending</a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

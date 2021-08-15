@@ -34,6 +34,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     
+    https://www.baeldung.com/spring-email
+    https://www.section.io/engineering-education/spring-boot-smtp/
+    https://howtodoinjava.com/spring-boot2/send-email-with-attachment/#5
+    
+    
     
     
     @ExceptionHandler(CustomerNotFoundException.class)

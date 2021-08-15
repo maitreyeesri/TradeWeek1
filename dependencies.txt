@@ -38,6 +38,8 @@
     https://www.section.io/engineering-education/spring-boot-smtp/
     https://howtodoinjava.com/spring-boot2/send-email-with-attachment/#5
     
+    https://www.pixeltrice.com/generate-the-qr-code-using-spring-boot-application/
+    
     
     
     

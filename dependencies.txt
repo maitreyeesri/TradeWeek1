@@ -74,3 +74,9 @@
 </dependency>
 
 @EnableSwagger2
+
+Desktop desktop = Desktop.getDesktop(); 
+    String message = "mailto:username@domain.com?subject=New_Profile&body=seeAttachment&attachment=c:/Update8.txt"; 
+    URI uri = URI.create(message); 
+    desktop.mail(uri); 
+

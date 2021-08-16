@@ -41,8 +41,13 @@
     https://www.pixeltrice.com/generate-the-qr-code-using-spring-boot-application/
     
     
-    
-    
+    JPA dependency :
+    <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        
+    Exception handler in controller:
     @ExceptionHandler(CustomerNotFoundException.class)
     public ResponseEntity<ResponseMessage> handleCustomerNotFoundException(HttpServletRequest request, Exception ex) {
         ResponseMessage rm = new ResponseMessage();

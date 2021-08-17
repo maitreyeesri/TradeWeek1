@@ -28,7 +28,7 @@ public static void main(String[] args) throws IOException, URISyntaxException {
     mailto(Arrays.asList("john@example.com", "jane@example.com"), "Hello!",
             "This is\nan automatically sent email!\n");
 }
-
+//api in java
 private static void getEmployees()
 {
     final String uri = "http://localhost:8080/springrestexample/employees.xml";
@@ -38,3 +38,5 @@ private static void getEmployees()
 
     System.out.println(result);
 }
+
+https://www.concretepage.com/spring-5/spring-resttemplate-getforobject

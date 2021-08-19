@@ -46,6 +46,8 @@
     
     https://www.geeksforgeeks.org/how-to-generate-and-read-qr-code-with-java-using-zxing-library/
     
+    
+    https://blog.aspose.com/2021/02/12/convert-pdf-to-png-jpeg-bmp-tiff-using-java/
     JPA dependency :
     <dependency>
             <groupId>org.springframework.boot</groupId>

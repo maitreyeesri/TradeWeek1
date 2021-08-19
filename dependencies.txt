@@ -48,6 +48,8 @@
     
     
     https://blog.aspose.com/2021/02/12/convert-pdf-to-png-jpeg-bmp-tiff-using-java/
+    
+    https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Examples/src/main/java/com/aspose/pdf/examples/AsposePdfExamples/Images/ConvertPDFPagesToJPEGImage.java
     JPA dependency :
     <dependency>
             <groupId>org.springframework.boot</groupId>

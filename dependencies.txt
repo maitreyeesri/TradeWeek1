@@ -38,6 +38,21 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     
+    // define paramterized URL
+String paramUrl = "https://jsonplaceholder.typicode.com/posts/{pId}";
+// create map for URL parameters
+Map<String, Integer> params = new HashMap<String, Integer>();
+params.put("pId", 1);
+System.out.println("PUT with parameterized URL");
+rest.put(paramUrl, post, params);
+System.out.println("Resource updated");
+System.out.println("PUT with parameterized URL");
+// put with object array for parameters
+rest.put(paramUrl, post,new Object[] {1});
+System.out.println("Resource updated");
+
+
+    
     https://www.baeldung.com/spring-email
     https://www.section.io/engineering-education/spring-boot-smtp/
     https://howtodoinjava.com/spring-boot2/send-email-with-attachment/#5
@@ -52,6 +67,8 @@
     https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Examples/src/main/java/com/aspose/pdf/examples/AsposePdfExamples/Images/ConvertPDFPagesToJPEGImage.java
     
     https://stackoverflow.com/questions/36210537/find-qr-code-in-image-and-decode-it-using-zxing
+    
+    https://codippa.com/resttemplate-spring-boot/
     
     JPA dependency :
     <dependency>
